@@ -126,5 +126,6 @@ public class Utility {
 		editor.putString("current_date", sdf.format(new Date()));
 		editor.commit();
 	}
+	
 
 }
