@@ -19,10 +19,10 @@ public  class WorldWeatherOpenHelper extends SQLiteOpenHelper {
 			"city_code text ," +
 			"province_id integer)" ;
 	
-	public static final String CREATE_COUNTRY = " create table Country (" +
+	public static final String CREATE_COUNTY = " create table County (" +
 			"id integer primary key autoincrement , " +
-			"Country_name text , " +
-			"Country_code text ," +
+			"county_name text , " +
+			"county_code text ," +
 			"city_id integer)" ;
 	
 	public WorldWeatherOpenHelper(Context context, String name,
@@ -36,7 +36,7 @@ public  class WorldWeatherOpenHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 		db.execSQL(CREATE_PROVINCE) ;
 		db.execSQL(CREATE_CITY) ;
-		db.execSQL(CREATE_COUNTRY) ;
+		db.execSQL(CREATE_COUNTY) ;
 	}
 
 	@Override
